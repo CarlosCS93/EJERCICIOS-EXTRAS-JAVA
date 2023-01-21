@@ -26,7 +26,7 @@ public class Ejercicio9 {
         dado que 11 es menor que 13, entonces: el residuo es 11 y el cociente es 3.
         ¿Aún no lo entendiste? Recomendamos googlear división con restas sucesivas.*/
         Scanner leer=new Scanner(System.in);
-        System.out.println("Ingrese dos numeros el primero mayor que el segundo");
+        System.out.println("Ingrese dosnumeros el primero mayor que el segundo");
         int num=leer.nextInt();
         int num2=leer.nextInt();
         int resta;
@@ -40,7 +40,7 @@ public class Ejercicio9 {
             i++;
         } while (resta >= num2);
         System.out.println("Se realizaron "+i+" restas sucesivas");
-        System.out.println("El residuo es "+resta+" y el cociente es "+num2);
+        System.out.println("El residuo es "+resta+" y el cociente es "+i);
         
         
         

@@ -41,38 +41,24 @@ importe en efectivo a pagar por dicho socio.*/
         System.out.println("USUARIO");
         String usuario = leer.nextLine();
 
-        do {
-
-            if (usuario.equals("carlos93")) {
-                System.out.println("Usuario Correcto");
-                break;
-            } else {
-
+        while (!usuario.equals("carlos93")){
                 System.out.println("Usuario Incorrecto, intente nuevamanete");
                 usuario = leer.next();
                 i++;
 
-            }
-
-        } while ("carlos93".equals(usuario));
+        }
+        System.out.println("Usuario Correcto");
+        
 
         System.out.println("CONTRASEÑA");
         int clave = leer.nextInt();
 
-        do {
-
-            if (clave == 23456) {
-                System.out.println("Clave correcta");
-                break;
-            } else {
-
+        while (clave != 23456){
                 System.out.println("Clave incorrecta, intente nuevamanete");
                 clave = leer.nextInt();
                 i++;
 
-            }
-
-        } while (clave != 23456);
+        }
 
         do {
 
@@ -93,14 +79,17 @@ importe en efectivo a pagar por dicho socio.*/
                         case 1:
                             System.out.println("TRATAMIENTO ODONTOLOGICO");
                             String tratamiento1 = "TRATAMIENTO ODONTOLOGICO";
+                            System.out.println("Precio del tratamiento: $ "+ valorO);
                             break;
                         case 2:
                             System.out.println("TRATAMIENTO TRAUMATOLOGICO");
                             String tratamiento2 = "TRATAMIENTO TRAUMATOLOGICO";
+                            System.out.println("Precio del tratamiento: $ "+ valorT);
                             break;
                         case 3:
                             System.out.println("TRATAMIENTO MEDICINA GENERAL");
                             String tratamiento3 = "TRATAMIENTO MEDICINA GENERAL";
+                            System.out.println("Precio del tratamiento: $ "+ valorM);
                             break;
                     }
 
@@ -115,13 +104,14 @@ importe en efectivo a pagar por dicho socio.*/
                             System.out.println("SOCIO TIPO A");
                             String tipo = "SOCIO TIPO A";
                             System.out.println("Tipo de socio recibe 50 % descuento");
-                            double descuentoa = 0.50;
+                            
+                            
                             break;
                         case "B":
                             System.out.println("SOCIO TIPO B");
                             String tipoo = "SOCIO TIPO B";
                             System.out.println("Tipo de socio recibe 35 % descuento");
-                            double descuentob = 0.65;
+                            
                             break;
                         case "C":
                             System.out.println("SOCIO TIPO C");
@@ -136,7 +126,7 @@ importe en efectivo a pagar por dicho socio.*/
                             switch (opcion3) {
                                 case "A":
                                     precioFinal = (valorO * 0.50);
-                                    System.out.println("Valor a pagar" + precioFinal);
+                                    System.out.println("Valor a pagar $" + precioFinal);
                                     break;
                                 case "B":
                                     precioFinal = (valorO * 0.65);
